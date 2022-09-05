@@ -6,19 +6,19 @@ class Allero < Formula
   version "0.0.1"
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/allero-io/allero/releases/download/0.0.1/allero_0.0.1_Darwin_x86_64.zip"
-    sha256 "86dfc9e48c9eb129177a576d8d133e29a61c695bb1b6becda60c03fdf9c4e086"
+    sha256 "96a1e387e4958d6b68fa4944b7dac06e0ff4d9f35097e656ce99055d82994ccc"
   end
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/allero-io/allero/releases/download/0.0.1/allero_0.0.1_Darwin_arm64.zip"
-    sha256 "a4e95d4f6c57779b1b5e12278f72742044f37d983c5f33ff46cd8f8e2f24505b"
+    sha256 "5e17e400784aaa98950c6bbf806130f8f2565a8a6f9217fcf1ffc61a3ec9eb77"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/allero-io/allero/releases/download/0.0.1/allero_0.0.1_Linux_x86_64.zip"
-    sha256 "3e606e8b94952fe4d5c66141379180fe4d1e342e34417590775b6376821e357b"
+    sha256 "959a95d3709e6015f1dbb4e89ff556ee917887e783576dfc5e2c3c4712466ed7"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://github.com/allero-io/allero/releases/download/0.0.1/allero_0.0.1_Linux_arm64.zip"
-    sha256 "4d8c519f99351bfb4c416f8e146f86be3416e1d08f90030b16b5cb871d6b1629"
+    sha256 "3d35c29010ae7f91242ff8ad097a868f8f9fffeec859476623218802f90673d1"
   end
   def install
     bin.install "allero"
