@@ -3,22 +3,22 @@
 class Allero < Formula
   desc ""
   homepage "https://www.allero.io/"
-  version "0.0.15"
+  version "0.0.16"
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/allero-io/allero/releases/download/0.0.15/allero_0.0.15_Darwin_x86_64.zip"
-    sha256 "7dc1f2701247f6f1f12150a7535d98b9c846189c44d9fedaa25e94c72dfb6930"
+    url "https://github.com/allero-io/allero/releases/download/0.0.16/allero_0.0.16_Darwin_x86_64.zip"
+    sha256 "9f7501c6798ae9b7e647eaa51c781f0e15a5633d84e8f3b261f30b1f2db16425"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/allero-io/allero/releases/download/0.0.15/allero_0.0.15_Darwin_arm64.zip"
-    sha256 "d56cd3057c396e8b1bed5be810bc0aab01c27f24a8c3514188188e4810496a12"
+    url "https://github.com/allero-io/allero/releases/download/0.0.16/allero_0.0.16_Darwin_arm64.zip"
+    sha256 "180c69510f115e01cbe8d3c51b6ade026f093eff67b7909c1861b07363a35df1"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/allero-io/allero/releases/download/0.0.15/allero_0.0.15_Linux_x86_64.zip"
-    sha256 "af406a8f1494785964db8427835ef1aa7d8de4b994bb5c9375b15cb5781562aa"
+    url "https://github.com/allero-io/allero/releases/download/0.0.16/allero_0.0.16_Linux_x86_64.zip"
+    sha256 "19f5062e7c19ee8427f67b14859f2eaf6dfae767dc04e80ddf9b8f0c44045c44"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/allero-io/allero/releases/download/0.0.15/allero_0.0.15_Linux_arm64.zip"
-    sha256 "69ff256402b4b60db2ed91542b13fc56c2cddad809146c2c88b07f752e27d43c"
+    url "https://github.com/allero-io/allero/releases/download/0.0.16/allero_0.0.16_Linux_arm64.zip"
+    sha256 "f3a89053d983a8a41896466e59b0975b4e38a8f69a249b64f575a17299a065fa"
   end
   def install
     bin.install "allero"
